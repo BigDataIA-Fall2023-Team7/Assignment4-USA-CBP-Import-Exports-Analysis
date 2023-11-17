@@ -1,0 +1,8 @@
+snowflake-snowpark-python[pandas]
+streamlit
+openai
+snowflake-connector-python
+snowflake-snowpark-python
+snowflake-sqlalchemy
+langchain
+langchain-experimental
