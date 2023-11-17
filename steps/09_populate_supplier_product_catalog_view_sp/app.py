@@ -43,10 +43,9 @@ def create_supplier_product_catalog_view(session):
     df = df.explode('PRODUCT_KEYWORDS', ignore_index=True)
     df['PRODUCT_KEYWORDS'] = df['PRODUCT_KEYWORDS'].str.replace(r'\s+', ' ', regex=True).str.lower()
     df = df.dropna(subset=['PRODUCT_KEYWORDS']).reset_index()
-    print ("Processing...")
-    delete_table_if_exists(session, schema='PUBLIC', name='SUPPLIER_PRODUCT_CATALOG') 
+    print ("Processing...") 
 
-    imports_df = session.write_pandas(df,table_name = 'SUPPLIER_PRODUCT_CATALOG', schema = 'PUBLIC', auto_create_table=True) #creating temp table
+    imports_df = session.write_pandas(df,table_name = 'SUPPLIER_PRODUCT_CATALOG', schema = 'HARMONIZED', auto_create_table=True) #creating temp table
     
     imports_df.create_or_replace_view("v_SUPPLIER_PRODUCT_CATALOG")
 
