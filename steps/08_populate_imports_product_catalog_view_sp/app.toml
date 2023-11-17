@@ -1,0 +1,17 @@
+snowsql_config_path = "~/.snowsql/config"
+snowsql_connection_name = "dev"
+
+[default]
+input_parameters = "()"
+return_type = "string"
+file = "app.zip"
+name = "populate_imports_product_catalog_view_sp"
+handler = "app.main"
+execute_as_caller = true
+
+[dev]
+database = "DB_DAMG7245_TEAM7"
+schema = "ANALYTICS"
+warehouse = "WH_DAMG7245_TEAM7"
+role = "ROLE_DAMG7245_TEAM7"
+overwrite = true
