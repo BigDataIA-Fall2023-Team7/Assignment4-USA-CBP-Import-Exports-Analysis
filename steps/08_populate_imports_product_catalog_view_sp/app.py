@@ -9,8 +9,8 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="pyarrow.pandas
 def delete_table_if_exists(session, schema='', name=''):
     exists = session.sql("SELECT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '{}' AND TABLE_NAME = '{}') AS TABLE_EXISTS".format(schema, name)).collect()[0]['TABLE_EXISTS']
     if exists: 
-        _ = session.sql(f'TRUNCATE TABLE USA_CBP.{schema}.{name}').collect()
-        print(f'TRUNCATE TABLE USA_CBP.{schema}.{name}')
+        _ = session.sql(f'TRUNCATE TABLE DB_DAMG7245_TEAM7.{schema}.{name}').collect()
+        print(f'TRUNCATE TABLE DB_DAMG7245_TEAM7.{schema}.{name}')
 
 def create_import_view(session):
     # session.use_schema('HARMONIZED')
