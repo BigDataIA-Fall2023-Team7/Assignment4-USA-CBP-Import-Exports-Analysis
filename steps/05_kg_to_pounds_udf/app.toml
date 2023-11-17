@@ -1,0 +1,17 @@
+snowsql_config_path = "~/.snowsql/config"
+snowsql_connection_name = "dev"
+
+[default]
+input_parameters = "(weight float)"
+return_type = "float"
+file = "app.zip"
+name = "kg_to_pounds_udf"
+handler = "app.main"
+execute_as_caller = true
+
+[dev]
+database = "DB_DAMG7245_TEAM7"
+schema = "ANALYTICS"
+warehouse = "WH_DAMG7245_TEAM7"
+role = "ROLE_DAMG7245_TEAM7"
+overwrite = true
