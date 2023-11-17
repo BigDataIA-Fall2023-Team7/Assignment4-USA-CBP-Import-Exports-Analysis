@@ -22,7 +22,11 @@ CICD enabled Snowflake based data pipelines for USA CBP imports and exports data
                            - Aditya- [link](https://github.com/aditya26091999/sfguide-data-engineering-with-snowpark-python)
                            - Uddhav-  [link](https://github.com/uddhavz/sfguide-data-engineering-with-snowpark-python)
 
-# Steps to run this prroject locally:
+## Architecture 👷🏻‍♂️
+
+![alt text](architecture_for_langchain_based_chatbot_for_snowflake_data.png)
+
+## Steps to run this prroject locally:
 Download SnowSQL CLI from this website
 https://developers.snowflake.com/snowsql/
 
