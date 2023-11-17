@@ -18,9 +18,9 @@ CICD enabled Snowflake based data pipelines for USA CBP imports and exports data
 - Codelab Doc - [link](https://docs.google.com/document/d/1BUJotKMuDXXW1CqZrfk-Sli0t2utbHxiTiTFYFRhCYA/edit?usp=sharing)
 - Demo Link - [link](https://drive.google.com/drive/folders/13U__JzwLv88_RbvuwXgVMKOtqvMm1Uss?usp=sharing)
 - Streamlit - [link](https://streamlit.io/)
-- GitRepo Links for Part A - Nidhi- [link] (https://github.com/Nidhi18593/Assignment4-sfguide-data-engineering-with-snowpark-python)
-                           - Aditya- [link] (https://github.com/aditya26091999/sfguide-data-engineering-with-snowpark-python)
-                           - Uddhav-  [link] (https://github.com/uddhavz/sfguide-data-engineering-with-snowpark-python)
+- GitRepo Links for Part A - Nidhi- [link](https://github.com/Nidhi18593/Assignment4-sfguide-data-engineering-with-snowpark-python)
+                           - Aditya- [link](https://github.com/aditya26091999/sfguide-data-engineering-with-snowpark-python)
+                           - Uddhav-  [link](https://github.com/uddhavz/sfguide-data-engineering-with-snowpark-python)
 
 # Steps to run this prroject locally:
 Download SnowSQL CLI from this website
