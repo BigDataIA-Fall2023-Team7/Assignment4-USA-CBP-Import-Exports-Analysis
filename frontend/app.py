@@ -27,13 +27,6 @@ if "history" not in st.session_state:
 
 st.title("❄️ Snowflake SQL ChatBot ❄️")
 
-# Initialize the chat messages history
-if "messages" not in st.session_state.keys():
-    st.session_state["messages"] = INITIAL_MESSAGE
-
-if "history" not in st.session_state:
-    st.session_state["history"] = []
-
 # Prompt for user input and save
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
@@ -54,10 +47,12 @@ snowflake_url = f"snowflake://{st.secrets.user}:{st.secrets.password}@{st.secret
 conn = SQLDatabase.from_uri(
     snowflake_url,
     sample_rows_in_table_info=3,
-    schema="public",
-    include_tables=["eventwatch_all_sample_v2"],
+    schema=st.secrets.schema, ## ADI: ADDED the schema and schema_artifacts from secrets.toml
+    include_tables=st.secrets.schema_artifacts, ## ADI: ADDED the schema and schema_artifacts from secrets.toml
     view_support=True,
 )
+
+st.success("Connected to Snowflake!")
 
 chain = create_sql_query_chain(ChatOpenAI(temperature=0), conn)
 
