@@ -24,7 +24,7 @@ CICD enabled Snowflake based data pipelines for USA CBP imports and exports data
 
 ## Architecture 👷🏻‍♂️
 
-![alt text](architecture_for_langchain_based_chatbot_for_snowflake_data.png)
+![alt text](architecture/architecture_for_langchain_based_chatbot_for_snowflake_data.png)
 
 ## Steps to run this prroject locally:
 Download SnowSQL CLI from this website
